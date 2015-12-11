@@ -6,6 +6,9 @@ export default Ember.View.extend({
     name: null,
     typeOne: null,
     typeTwo: null,
-    generation: null
+    generationNum: null,
+    generation: Ember.computed('newPokemon.generationNum', function(){
+      return this.store.findRecord('generation', this.get('newPokemon.generationNum'));
+    })
   }
 });

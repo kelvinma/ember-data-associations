@@ -1,0 +1,14 @@
+<h5> Add a Pokemon to the directory! </h5>
+{{input placeholder='National Pokemon Number'
+        valueBinding='newPokemon.nationalPokeNum'}}
+{{input placeholder='Name'
+        valueBinding='newPokemon.name'}}
+{{input placeholder='Type One'
+        valueBinding='newPokemon.typeOne'}}
+{{input placeholder='Type Two'
+        valueBinding='newPokemon.typeTwo'}}
+{{input placeholder='Generation'
+        valueBinding='generationNum'}}
+<button {{action 'createPokemon' newPokemon}}> Add a New Pokemon </button>
+
+{{#link-to 'pokemon'}}Back{{/link-to}}

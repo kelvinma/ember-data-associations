@@ -7,7 +7,7 @@
   {{#if isExpanded}}
     <button {{action 'toggleEditable'}}>EDIT</button>
     <button {{action 'destroyPokemon'}}>DELETE</button>
-    <p> Generation: {{pokemon.generation}} </p>
+    <p> Generation: {{pokemon.generation.name}} </p>
     <p> Type: {{pokemon.typeOne}} {{#if twoTypes}}/ {{pokemon.typeTwo}}{{/if}} </p>
   {{/if}}
 
@@ -21,7 +21,7 @@
   </button>
   <button {{action 'toggleEditable'}}>CONFIRM EDIT</button>
   <button {{action 'destroyPokemon'}}>DELETE</button>
-  <p> Generation: {{input valueBinding='pokemon.generation'}} </p>
+  <p> Generation: {{input valueBinding='pokemon.generation.name'}} </p>
   <p> Type: {{input valueBinding='pokemon.typeOne'}} / {{input valueBinding='pokemon.typeTwo'}} </p>
 
 {{/unless}}

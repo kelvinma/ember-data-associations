@@ -1,5 +1,5 @@
-<h5> Add a Pokemon to the directory! </h5>
-{{input placeholder='National Pokemon Number'
+{{!-- <h5> Add a Pokemon to the directory! </h5> --}}
+{{!-- {{input placeholder='National Pokemon Number'
         valueBinding='view.newPokemon.nationalPokeNum'}}
 {{input placeholder='Name'
         valueBinding='view.newPokemon.name'}}
@@ -8,7 +8,8 @@
 {{input placeholder='Type Two'
         valueBinding='view.newPokemon.typeTwo'}}
 {{input placeholder='Generation'
-        valueBinding='view.newPokemon.generation'}}
-<button {{action 'createPokemon' view.newPokemon}}> Add a New Pokemon </button>
+        valueBinding='view.newPokemon.generationNum'}}
+<button {{action 'createPokemon' view.newPokemon}}> Add a New Pokemon </button> --}}
+{{new-pokemon routeCreatePokemon='createPokemon'}}
 
 {{#link-to 'pokemon'}}Back{{/link-to}}

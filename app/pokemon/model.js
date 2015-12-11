@@ -5,5 +5,6 @@ export default DS.Model.extend({
   name: DS.attr('string'),
   typeOne: DS.attr('string'),
   typeTwo: DS.attr('string'),
-  generation: DS.attr('number')
+  types: DS.hasMany('type', {async: true}),
+  generation: DS.belongsTo('generation', {async: true})
 });
